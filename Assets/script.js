@@ -20,14 +20,13 @@ var randomPassword = [];
 function generatePassword() {
   randomPassword = [];
   //promting user to input password length
-  var passwordLength = prompt("Please input your password! Must be over 8 characters and not over 128 characters long!");
-  if (passwordLength < 8) {
-    alert('Must input 8 or more characters long!');
-  } else if (passwordLength > 128) {
-    alert('No more than 128 characters long');
-  } else if (passwordLength === "") {
-    alert('Invalid input!');
-  };
+  while (true) {
+    var passwordLength = prompt("Please input your password! Must be over 8 characters and not over 128 characters long!");
+    if (passwordLength >= 8 && passwordLength <= 128) {
+      break;
+    };
+  }
+
   // Ask user to included lower, upper, number, and special character in the password or not
   var lower = confirm('Do you want to included lower case?')
   var upper = confirm('Do you want to included upper case?');
