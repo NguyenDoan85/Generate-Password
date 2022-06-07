@@ -14,6 +14,6 @@
 - WHEN the password is generated
 - THEN the password is written to the page
 ```
-Live link [Generate Passwor]()
+Live link [Generate Password](https://nguyendoan85.github.io/Generate-Password/)
 
 ![ScreenShot](Assets/03-javascript-homework-demo.png)
